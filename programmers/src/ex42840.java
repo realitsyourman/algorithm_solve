@@ -25,6 +25,8 @@ public class ex42840 {
 
         Arrays.stream(sol).forEach(System.out::println);
 
+
+
     }
 
     public static int[] solution(int[] answers) {
@@ -35,7 +37,6 @@ public class ex42840 {
         studentList[2] = new int[]{3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
 
         int[] answer = new int[3];
-
 
         for(int i=0; i<answers.length; i++) {
             for(int j=0; j<studentList.length; j++) {
@@ -55,7 +56,7 @@ public class ex42840 {
         }
 
         return tree.stream()
-                .sorted(Collections.reverseOrder())
+                .sorted()
                 .mapToInt(Integer::intValue)
                 .toArray();
     }
