@@ -12,7 +12,7 @@ public class ex68644 {
                 tree.add(numbers[i]+numbers[j]);
             }
         }
-
+        
         int[] array = tree.stream()
                 .mapToInt(Integer::intValue)
                 .toArray();
